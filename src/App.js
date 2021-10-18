@@ -11,6 +11,7 @@ import { List } from './components/pages/List';
 import { Portfolio } from './components/pages/Portfolio';
 import { About } from './components/pages/About';
 import { Contact } from './components/pages/Contact';
+import { NotFoundPage } from './components/pages/NotFoundPage';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/service/List/:id" children={<List />} />
+        <Route component={NotFoundPage} />
       </Switch>
       <Footer />
     </>
